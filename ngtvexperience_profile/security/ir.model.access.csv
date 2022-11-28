@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_first_category_configuration,access.first.category.configuration,ngtvexperience_profile.model_first_category,ngtvexperience_profile.group_helpdesk_ticket_categories,1,1,1,1
+access_second_category_configuration,access.second.category.configuration,ngtvexperience_profile.model_second_category,ngtvexperience_profile.group_helpdesk_ticket_categories,1,1,1,1
+access_third_category_configuration,access.third.category.configuration,ngtvexperience_profile.model_third_category,ngtvexperience_profile.group_helpdesk_ticket_categories,1,1,1,1

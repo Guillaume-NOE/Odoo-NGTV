@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
+-->
+<odoo>
+    <record id="second_category_view_tree" model="ir.ui.view">
+        <field name="name">second.category.view.tree</field>
+        <field name="model">second.category</field>
+        <field name="arch" type="xml">
+            <tree string="Second Category">
+                <field name="name"/>
+                <field name="first_category_id"/>
+            </tree>
+        </field>
+    </record>
+    <record id="second_category_view_form" model="ir.ui.view">
+        <field name="name">second.category.view.form</field>
+        <field name="model">second.category</field>
+        <field name="arch" type="xml">
+            <form string="Second Category">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <group>
+                            <field name="first_category_id"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="second_category_configuration_action" model="ir.actions.act_window">
+        <field name="name">Second Categories</field>
+        <field name="res_model">second.category</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No second categories found. Let's create one!
+            </p>
+        </field>
+    </record>
+    <menuitem id="second_category_configuration"
+              action="ngtvexperience_profile.second_category_configuration_action"
+              name="Second Categories"
+              groups="ngtvexperience_profile.group_helpdesk_ticket_categories"
+              parent="ngtvexperience_profile.helpdesk_categories_configuration"
+    />
+</odoo>
