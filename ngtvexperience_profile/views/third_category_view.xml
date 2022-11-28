@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
+-->
+<odoo>
+    <record id="third_category_view_tree" model="ir.ui.view">
+        <field name="name">third.category.view.tree</field>
+        <field name="model">third.category</field>
+        <field name="arch" type="xml">
+            <tree string="Third Category">
+                <field name="name"/>
+                <field name="second_category_id"/>
+            </tree>
+        </field>
+    </record>
+    <record id="third_category_view_form" model="ir.ui.view">
+        <field name="name">third.category.view.form</field>
+        <field name="model">third.category</field>
+        <field name="arch" type="xml">
+            <form string="Second Category">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <group>
+                            <field name="second_category_id"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="third_category_configuration_action" model="ir.actions.act_window">
+        <field name="name">Third Categories</field>
+        <field name="res_model">third.category</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No third categories found. Let's create one!
+            </p>
+        </field>
+    </record>
+    <menuitem id="third_category_configuration"
+              action="ngtvexperience_profile.third_category_configuration_action"
+              name="Third Categories"
+              parent="ngtvexperience_profile.helpdesk_categories_configuration"
+              groups="ngtvexperience_profile.group_helpdesk_ticket_categories"
+    />
+</odoo>

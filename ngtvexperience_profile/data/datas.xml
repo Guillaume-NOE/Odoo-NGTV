@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
+-->
+<odoo>
+    <data noupdate="1">
+        <!-- List First categories .-->
+        <record id="first_category_1" model="first.category">
+            <field name="name">Matériel</field>
+        </record>
+        <record id="first_category_2" model="first.category">
+            <field name="name">Software</field>
+        </record>
+
+        <!-- List Second categories .-->
+        <record id="second_category_1" model="second.category">
+            <field name="name">Caméra</field>
+            <field name="first_category_id" ref="ngtvexperience_profile.first_category_1"/>
+        </record>
+        <record id="second_category_2" model="second.category">
+            <field name="name">Ecran</field>
+            <field name="first_category_id" ref="ngtvexperience_profile.first_category_1"/>
+        </record>
+        <record id="second_category_3" model="second.category">
+            <field name="name">PC</field>
+            <field name="first_category_id" ref="ngtvexperience_profile.first_category_1"/>
+        </record>
+        <record id="second_category_4" model="second.category">
+            <field name="name">Routeur</field>
+            <field name="first_category_id" ref="ngtvexperience_profile.first_category_1"/>
+        </record>
+        <record id="second_category_5" model="second.category">
+            <field name="name">Switch</field>
+            <field name="first_category_id" ref="ngtvexperience_profile.first_category_1"/>
+        </record>
+        <record id="second_category_6" model="second.category">
+            <field name="name">Paramétrage</field>
+            <field name="first_category_id" ref="ngtvexperience_profile.first_category_1"/>
+        </record>
+        <record id="second_category_7" model="second.category">
+            <field name="name">NGTV</field>
+            <field name="first_category_id" ref="ngtvexperience_profile.first_category_2"/>
+        </record>
+        <record id="second_category_8" model="second.category">
+            <field name="name">Linux</field>
+            <field name="first_category_id" ref="ngtvexperience_profile.first_category_2"/>
+        </record>
+        <record id="second_category_9" model="second.category">
+            <field name="name">Windows</field>
+            <field name="first_category_id" ref="ngtvexperience_profile.first_category_2"/>
+        </record>
+        <record id="second_category_10" model="second.category">
+            <field name="name">Chrome</field>
+            <field name="first_category_id" ref="ngtvexperience_profile.first_category_2"/>
+        </record>
+        <record id="second_category_11" model="second.category">
+            <field name="name">Firezone</field>
+            <field name="first_category_id" ref="ngtvexperience_profile.first_category_2"/>
+        </record>
+        <record id="second_category_12" model="second.category">
+            <field name="name">Live</field>
+            <field name="first_category_id" ref="ngtvexperience_profile.first_category_2"/>
+        </record>
+
+        <!-- List Third categories .-->
+        <record id="third_category_1" model="third.category">
+            <field name="name">Désaxée</field>
+            <field name="second_category_id" ref="ngtvexperience_profile.second_category_1"/>
+        </record>
+        <record id="third_category_2" model="third.category">
+            <field name="name">Violette</field>
+            <field name="second_category_id" ref="ngtvexperience_profile.second_category_1"/>
+        </record>
+        <record id="third_category_3" model="third.category">
+            <field name="name">Floue</field>
+            <field name="second_category_id" ref="ngtvexperience_profile.second_category_1"/>
+        </record>
+        <record id="third_category_4" model="third.category">
+            <field name="name">KO</field>
+            <field name="second_category_id" ref="ngtvexperience_profile.second_category_1"/>
+        </record>
+        <record id="third_category_5" model="third.category">
+            <field name="name">Autre</field>
+            <field name="second_category_id" ref="ngtvexperience_profile.second_category_1"/>
+        </record>
+        <record id="third_category_6" model="third.category">
+            <field name="name">Problème de paramètres</field>
+            <field name="second_category_id" ref="ngtvexperience_profile.second_category_1"/>
+        </record>
+        <record id="third_category_7" model="third.category">
+            <field name="name">Caméra Violette</field>
+            <field name="second_category_id" ref="ngtvexperience_profile.second_category_1"/>
+        </record>
+        <record id="third_category_8" model="third.category">
+            <field name="name">Tactile</field>
+            <field name="second_category_id" ref="ngtvexperience_profile.second_category_2"/>
+        </record>
+        <record id="third_category_9" model="third.category">
+            <field name="name">Ecran non fonctionnel</field>
+            <field name="second_category_id" ref="ngtvexperience_profile.second_category_2"/>
+        </record>
+        <record id="third_category_10" model="third.category">
+            <field name="name">Cassé</field>
+            <field name="second_category_id" ref="ngtvexperience_profile.second_category_2"/>
+        </record>
+        <record id="third_category_11" model="third.category">
+            <field name="name">Problème de paramètres</field>
+            <field name="second_category_id" ref="ngtvexperience_profile.second_category_2"/>
+        </record>
+
+        <record id="third_category_12" model="third.category">
+            <field name="name">Matériel KO</field>
+            <field name="second_category_id" ref="ngtvexperience_profile.second_category_3"/>
+        </record>
+        <record id="third_category_13" model="third.category">
+            <field name="name">Problème de paramètres</field>
+            <field name="second_category_id" ref="ngtvexperience_profile.second_category_3"/>
+        </record>
+        <record id="third_category_14" model="third.category">
+            <field name="name">Problème d’affichage</field>
+            <field name="second_category_id" ref="ngtvexperience_profile.second_category_3"/>
+        </record>
+        <record id="third_category_15" model="third.category">
+            <field name="name">Problème d’espace disque</field>
+            <field name="second_category_id" ref="ngtvexperience_profile.second_category_3"/>
+        </record>
+        <record id="third_category_16" model="third.category">
+            <field name="name">Webserver Offline</field>
+            <field name="second_category_id" ref="ngtvexperience_profile.second_category_3"/>
+        </record>
+        <record id="third_category_17" model="third.category">
+            <field name="name">Interface Offline</field>
+            <field name="second_category_id" ref="ngtvexperience_profile.second_category_3"/>
+        </record>
+        <record id="third_category_18" model="third.category">
+            <field name="name">Surchauffe PC</field>
+            <field name="second_category_id" ref="ngtvexperience_profile.second_category_3"/>
+        </record>
+
+        <record id="third_category_19" model="third.category">
+            <field name="name">Problème de paramètres</field>
+            <field name="second_category_id" ref="ngtvexperience_profile.second_category_4"/>
+        </record>
+        <record id="third_category_20" model="third.category">
+            <field name="name">Matériel KO</field>
+            <field name="second_category_id" ref="ngtvexperience_profile.second_category_4"/>
+        </record>
+        <record id="third_category_21" model="third.category">
+            <field name="name">Problème de paramètres (si switch manageable)</field>
+            <field name="second_category_id" ref="ngtvexperience_profile.second_category_5"/>
+        </record>
+        <record id="third_category_22" model="third.category">
+            <field name="name">Matériel KO</field>
+            <field name="second_category_id" ref="ngtvexperience_profile.second_category_5"/>
+        </record>
+        <record id="third_category_23" model="third.category">
+            <field name="name"></field>
+            <field name="second_category_id" ref="ngtvexperience_profile.second_category_6"/>
+        </record>
+        <record id="third_category_24" model="third.category">
+            <field name="name">Web</field>
+            <field name="second_category_id" ref="ngtvexperience_profile.second_category_7"/>
+        </record>
+        <record id="third_category_25" model="third.category">
+            <field name="name">IA</field>
+            <field name="second_category_id" ref="ngtvexperience_profile.second_category_7"/>
+        </record>
+        <record id="third_category_26" model="third.category">
+            <field name="name">Mobile</field>
+            <field name="second_category_id" ref="ngtvexperience_profile.second_category_7"/>
+        </record>
+        <record id="third_category_27" model="third.category">
+            <field name="name">Problème de paramètres</field>
+            <field name="second_category_id" ref="ngtvexperience_profile.second_category_8"/>
+        </record>
+        <record id="third_category_28" model="third.category">
+            <field name="name">Problème de paramètres</field>
+            <field name="second_category_id" ref="ngtvexperience_profile.second_category_9"/>
+        </record>
+        <record id="third_category_29" model="third.category">
+            <field name="name">Problème de paramètres</field>
+            <field name="second_category_id" ref="ngtvexperience_profile.second_category_10"/>
+        </record>
+        <record id="third_category_30" model="third.category">
+            <field name="name">Problème de paramètres5</field>
+            <field name="second_category_id" ref="ngtvexperience_profile.second_category_11"/>
+        </record>
+        <record id="third_category_31" model="third.category">
+            <field name="name">Message "erreur dans vos options"</field>
+            <field name="second_category_id" ref="ngtvexperience_profile.second_category_12"/>
+        </record>
+    </data>
+</odoo>

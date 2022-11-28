@@ -1,0 +1,185 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ngtvexperience_profile
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-28 17:11+0000\n"
+"PO-Revision-Date: 2022-11-28 18:11+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: ngtvexperience_profile
+#: model:ir.ui.menu,name:ngtvexperience_profile.helpdesk_categories_configuration
+msgid "Categories Configuration"
+msgstr "Configuration des catégories"
+
+#. module: ngtvexperience_profile
+#: model:ir.model.fields,field_description:ngtvexperience_profile.field_first_category__create_uid
+#: model:ir.model.fields,field_description:ngtvexperience_profile.field_second_category__create_uid
+#: model:ir.model.fields,field_description:ngtvexperience_profile.field_third_category__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: ngtvexperience_profile
+#: model:ir.model.fields,field_description:ngtvexperience_profile.field_first_category__create_date
+#: model:ir.model.fields,field_description:ngtvexperience_profile.field_second_category__create_date
+#: model:ir.model.fields,field_description:ngtvexperience_profile.field_third_category__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: ngtvexperience_profile
+#: model:ir.model.fields,field_description:ngtvexperience_profile.field_first_category__display_name
+#: model:ir.model.fields,field_description:ngtvexperience_profile.field_second_category__display_name
+#: model:ir.model.fields,field_description:ngtvexperience_profile.field_third_category__display_name
+msgid "Display Name"
+msgstr "Nom"
+
+#. module: ngtvexperience_profile
+#: model:ir.actions.act_window,name:ngtvexperience_profile.first_category_configuration_action
+#: model:ir.ui.menu,name:ngtvexperience_profile.first_category_configuration
+msgid "First Categories"
+msgstr "Catégories 1"
+
+#. module: ngtvexperience_profile
+#: model:ir.model,name:ngtvexperience_profile.model_first_category
+#: model_terms:ir.ui.view,arch_db:ngtvexperience_profile.first_category_view_form
+#: model_terms:ir.ui.view,arch_db:ngtvexperience_profile.first_category_view_tree
+#: model_terms:ir.ui.view,arch_db:ngtvexperience_profile.helpdesk_ticket_view_form_custom
+msgid "First Category"
+msgstr "Catégorie 1"
+
+#. module: ngtvexperience_profile
+#: model:ir.model.fields,help:ngtvexperience_profile.field_helpdesk_ticket__first_category_id
+#: model:ir.model.fields,help:ngtvexperience_profile.field_second_category__first_category_id
+msgid "First category ID."
+msgstr "Catégories1 ID"
+
+#. module: ngtvexperience_profile
+#: model:ir.model.fields,field_description:ngtvexperience_profile.field_helpdesk_ticket__first_category_id
+#: model:ir.model.fields,field_description:ngtvexperience_profile.field_second_category__first_category_id
+msgid "First catgory"
+msgstr "Catégorie 1"
+
+#. module: ngtvexperience_profile
+#: model:ir.model,name:ngtvexperience_profile.model_helpdesk_ticket
+msgid "Helpdesk Ticket"
+msgstr "Ticket d'Assistance"
+
+#. module: ngtvexperience_profile
+#: model:res.groups,name:ngtvexperience_profile.group_helpdesk_ticket_categories
+msgid "Helpdesk Ticket Categories: Manager"
+msgstr "Catégories Ticket: Manager"
+
+#. module: ngtvexperience_profile
+#: model:ir.model.fields,field_description:ngtvexperience_profile.field_first_category__id
+#: model:ir.model.fields,field_description:ngtvexperience_profile.field_second_category__id
+#: model:ir.model.fields,field_description:ngtvexperience_profile.field_third_category__id
+msgid "ID"
+msgstr ""
+
+#. module: ngtvexperience_profile
+#: model:ir.model.fields,field_description:ngtvexperience_profile.field_first_category____last_update
+#: model:ir.model.fields,field_description:ngtvexperience_profile.field_second_category____last_update
+#: model:ir.model.fields,field_description:ngtvexperience_profile.field_third_category____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: ngtvexperience_profile
+#: model:ir.model.fields,field_description:ngtvexperience_profile.field_first_category__write_uid
+#: model:ir.model.fields,field_description:ngtvexperience_profile.field_second_category__write_uid
+#: model:ir.model.fields,field_description:ngtvexperience_profile.field_third_category__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: ngtvexperience_profile
+#: model:ir.model.fields,field_description:ngtvexperience_profile.field_first_category__write_date
+#: model:ir.model.fields,field_description:ngtvexperience_profile.field_second_category__write_date
+#: model:ir.model.fields,field_description:ngtvexperience_profile.field_third_category__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: ngtvexperience_profile
+#: model:ir.model.fields,field_description:ngtvexperience_profile.field_first_category__name
+#: model:ir.model.fields,field_description:ngtvexperience_profile.field_second_category__name
+#: model:ir.model.fields,field_description:ngtvexperience_profile.field_third_category__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: ngtvexperience_profile
+#: model_terms:ir.actions.act_window,help:ngtvexperience_profile.first_category_configuration_action
+msgid "No first categories found. Let's create one!"
+msgstr "Aucune première catégorie définie. Veuillez en créer :)"
+
+#. module: ngtvexperience_profile
+#: model_terms:ir.actions.act_window,help:ngtvexperience_profile.second_category_configuration_action
+msgid "No second categories found. Let's create one!"
+msgstr "Aucune deuxième catégorie définie. Veuillez en créer :)"
+
+#. module: ngtvexperience_profile
+#: model_terms:ir.actions.act_window,help:ngtvexperience_profile.third_category_configuration_action
+msgid "No third categories found. Let's create one!"
+msgstr "Aucune troixième catégorie définie. Veuillez en créer :)"
+
+#. module: ngtvexperience_profile
+#: model:ir.actions.act_window,name:ngtvexperience_profile.second_category_configuration_action
+#: model:ir.ui.menu,name:ngtvexperience_profile.second_category_configuration
+msgid "Second Categories"
+msgstr "Catégories 2"
+
+#. module: ngtvexperience_profile
+#: model:ir.model,name:ngtvexperience_profile.model_second_category
+#: model_terms:ir.ui.view,arch_db:ngtvexperience_profile.helpdesk_ticket_view_form_custom
+#: model_terms:ir.ui.view,arch_db:ngtvexperience_profile.second_category_view_form
+#: model_terms:ir.ui.view,arch_db:ngtvexperience_profile.second_category_view_tree
+#: model_terms:ir.ui.view,arch_db:ngtvexperience_profile.third_category_view_form
+msgid "Second Category"
+msgstr "Catégorie 2"
+
+#. module: ngtvexperience_profile
+#: model:ir.model.fields,help:ngtvexperience_profile.field_helpdesk_ticket__second_category_id
+#: model:ir.model.fields,help:ngtvexperience_profile.field_third_category__second_category_id
+msgid "Second category ID."
+msgstr "Catégorie 2 ID"
+
+#. module: ngtvexperience_profile
+#: model:ir.model.fields,field_description:ngtvexperience_profile.field_helpdesk_ticket__second_category_id
+#: model:ir.model.fields,field_description:ngtvexperience_profile.field_third_category__second_category_id
+msgid "Second catgory"
+msgstr "Catégorie 2"
+
+#. module: ngtvexperience_profile
+#: model:ir.actions.act_window,name:ngtvexperience_profile.third_category_configuration_action
+#: model:ir.ui.menu,name:ngtvexperience_profile.third_category_configuration
+msgid "Third Categories"
+msgstr "Catégories 3"
+
+#. module: ngtvexperience_profile
+#: model:ir.model,name:ngtvexperience_profile.model_third_category
+#: model_terms:ir.ui.view,arch_db:ngtvexperience_profile.helpdesk_ticket_view_form_custom
+#: model_terms:ir.ui.view,arch_db:ngtvexperience_profile.third_category_view_tree
+msgid "Third Category"
+msgstr "Catégorie 3"
+
+#. module: ngtvexperience_profile
+#: model:ir.model.fields,help:ngtvexperience_profile.field_helpdesk_ticket__third_category_id
+msgid "Third category ID."
+msgstr "Catégorie 3 ID"
+
+#. module: ngtvexperience_profile
+#: model:ir.model.fields,field_description:ngtvexperience_profile.field_helpdesk_ticket__third_category_id
+msgid "Third catgory"
+msgstr "Catégorie 3"
+
+#. module: ngtvexperience_profile
+#: model_terms:ir.ui.view,arch_db:ngtvexperience_profile.first_category_view_form
+msgid "e.g. First Category"
+msgstr "e.g. Catégorie 1"

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
+-->
+<odoo>
+    <record id="first_category_view_tree" model="ir.ui.view">
+        <field name="name">first.category.view.tree</field>
+        <field name="model">first.category</field>
+        <field name="arch" type="xml">
+            <tree string="First Category">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+    <record id="first_category_view_form" model="ir.ui.view">
+        <field name="name">first.category.view.form</field>
+        <field name="model">first.category</field>
+        <field name="arch" type="xml">
+            <form string="First Category">
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="e.g. First Category"/>
+                        </h1>
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="first_category_configuration_action" model="ir.actions.act_window">
+        <field name="name">First Categories</field>
+        <field name="res_model">first.category</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No first categories found. Let's create one!
+            </p>
+        </field>
+    </record>
+    <menuitem id="helpdesk_categories_configuration"
+              name="Categories Configuration"
+              parent="helpdesk.helpdesk_menu_config"
+              groups="ngtvexperience_profile.group_helpdesk_ticket_categories"
+    />
+    <menuitem id="first_category_configuration"
+              action="ngtvexperience_profile.first_category_configuration_action"
+              name="First Categories"
+              parent="ngtvexperience_profile.helpdesk_categories_configuration"
+              groups="ngtvexperience_profile.group_helpdesk_ticket_categories"
+    />
+</odoo>

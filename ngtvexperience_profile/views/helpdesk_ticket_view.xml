@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
+-->
+<odoo>
+    <record id="helpdesk_ticket_view_form_custom" model="ir.ui.view">
+        <field name="name">helpdesk.ticket.view.form.custom</field>
+        <field name="model">helpdesk.ticket</field>
+        <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form"/>
+        <field name="arch" type="xml">
+            <field name="ticket_type_id" position="after">
+                <field name="first_category_id"
+                       options="{'no_open': True, 'no_create': True}"
+                       string="First Category"
+                       attrs="{'invisible':[('ticket_type_id','=',False)]}"
+                       groups="ngtvexperience_profile.group_helpdesk_ticket_categories"
+                />
+                <field name="second_category_id"
+                       string="Second Category"
+                       options="{'no_open': True, 'no_create': True}"
+                       attrs="{'invisible':[('first_category_id','=',False)]}"
+                       domain="[('first_category_id', '=', first_category_id)]"
+                       groups="ngtvexperience_profile.group_helpdesk_ticket_categories"
+                />
+                <field name="third_category_id"
+                       string="Third Category"
+                       options="{'no_open': True, 'no_create': True}"
+                       attrs="{'invisible':[('second_category_id','=',False)]}"
+                       domain="[('second_category_id', '=', second_category_id)]"
+                       groups="ngtvexperience_profile.group_helpdesk_ticket_categories"
+                />
+            </field>
+        </field>
+    </record>
+</odoo>

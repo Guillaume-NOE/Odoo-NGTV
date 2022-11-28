@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!--
+    License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
+-->
+<odoo>
+    <data>
+        <record model="res.groups" id="group_helpdesk_ticket_categories">
+            <field name="name">Helpdesk Ticket Categories: Manager</field>
+        </record>
+    </data>
+</odoo>
