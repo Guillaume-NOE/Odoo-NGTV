@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+    License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
+-->
+<odoo>
+    <data>
+        <record model="res.groups" id="group_active_res_partner">
+            <field name="name">Res Partner: Active</field>
+        </record>
+        <record model="res.groups" id="group_administrative_res_partner">
+            <field name="name">Res Partner: Administrative Validation</field>
+        </record>
+    </data>
+</odoo>

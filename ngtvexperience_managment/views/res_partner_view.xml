@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
+-->
+<odoo>
+    <record id="view_partner_form_inherit" model="ir.ui.view">
+        <field name="name">res.partner.view.form.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="before">
+                <field name="current_user_is_active" invisible="1"/>
+                <field name="has_administrative_validation" invisible="1"/>
+                <field name="supplier_rank" invisible="1"/>
+                <group>
+                    <group>
+                        <field name="is_active"
+                               attrs="{'readonly': [('current_user_is_active','=', False)], 'invisible': [('supplier_rank', '&lt;=', 0)]}"
+                        />
+                    </group>
+                    <group>
+                        <field name="administrative_validation"
+                               attrs="{'readonly': [('has_administrative_validation','=', False)], 'invisible': [('supplier_rank', '&lt;=', 0)]}"
+                        />
+                    </group>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>
