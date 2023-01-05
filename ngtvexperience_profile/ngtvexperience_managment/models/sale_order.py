@@ -15,5 +15,5 @@ class SaleOrder(models.Model):
             discount_max = self.pricelist_id.discount_max
             if self.order_line:
                 for line in self.order_line:
-                    if float_compare(line.discount, line.pricelist_id.discount_max, 3) > 0:
+                    if float_compare(line.discount, line.order_id.pricelist_id.discount_max, 3) > 0:
                         raise ValidationError(_('The maximum value of discounts not to be exceeded is ' + str(discount_max)))
