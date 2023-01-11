@@ -1,0 +1,117 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ngtvexperience_managment
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-03 19:48+0000\n"
+"PO-Revision-Date: 2023-01-03 20:54+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: ngtvexperience_managment
+#: model:ir.model.fields,field_description:ngtvexperience_managment.field_res_partner__is_active
+#: model:ir.model.fields,field_description:ngtvexperience_managment.field_res_users__is_active
+msgid "Active"
+msgstr "Active"
+
+#. module: ngtvexperience_managment
+#: model:ir.model.fields,field_description:ngtvexperience_managment.field_res_partner__administrative_validation
+#: model:ir.model.fields,field_description:ngtvexperience_managment.field_res_users__administrative_validation
+msgid "Administrative Validation"
+msgstr "Validation administrative"
+
+#. module: ngtvexperience_managment
+#: model:ir.model,name:ngtvexperience_managment.model_res_partner
+msgid "Contact"
+msgstr "Contact"
+
+#. module: ngtvexperience_managment
+#: model:ir.model.fields,field_description:ngtvexperience_managment.field_res_partner__has_administrative_validation
+#: model:ir.model.fields,field_description:ngtvexperience_managment.field_res_users__has_administrative_validation
+msgid "Current user has administrative validation"
+msgstr "L’utilisateur connecté a le droit de modifier des client actifs"
+
+#. module: ngtvexperience_managment
+#: model:ir.model.fields,field_description:ngtvexperience_managment.field_res_partner__current_user_is_active
+#: model:ir.model.fields,field_description:ngtvexperience_managment.field_res_users__current_user_is_active
+msgid "Current user is active"
+msgstr "L’utilisateur connecté a le droit de modifier des client actifs"
+
+#. module: ngtvexperience_managment
+#: model:ir.model.fields,field_description:ngtvexperience_managment.field_product_pricelist__discount_max
+msgid "Discount Max"
+msgstr "Remise maximale"
+
+#. module: ngtvexperience_managment
+#: model:ir.model,name:ngtvexperience_managment.model_hr_expense
+msgid "Expense"
+msgstr "Note de frais"
+
+#. module: ngtvexperience_managment
+#: model:ir.model,name:ngtvexperience_managment.model_product_pricelist
+msgid "Pricelist"
+msgstr "Liste de prix"
+
+#. module: ngtvexperience_managment
+#: model:ir.model.fields,field_description:ngtvexperience_managment.field_hr_expense__project_id
+#: model:ir.model.fields,help:ngtvexperience_managment.field_hr_expense__project_id
+msgid "Project ID"
+msgstr "Projet"
+
+#. module: ngtvexperience_managment
+#: model:res.groups,name:ngtvexperience_managment.group_active_res_partner
+msgid "Res Partner: Active"
+msgstr "Clients : Actifs"
+
+#. module: ngtvexperience_managment
+#: model:res.groups,name:ngtvexperience_managment.group_administrative_res_partner
+msgid "Res Partner: Administrative Validation"
+msgstr "Clients: Validation administrative"
+
+#. module: ngtvexperience_managment
+#: model:ir.model,name:ngtvexperience_managment.model_sale_order
+msgid "Sales Order"
+msgstr "Devis"
+
+#. module: ngtvexperience_managment
+#: model:ir.model,name:ngtvexperience_managment.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Lignes de devis"
+
+#. module: ngtvexperience_managment
+#. odoo-python
+#: code:addons/customer/ngtvexperience_managment/models/sale_order.py:0
+#: code:addons/customer/ngtvexperience_managment/models/sale_order_line.py:0
+#: code:addons/ngtvexperience_managment/models/sale_order.py:0
+#: code:addons/ngtvexperience_managment/models/sale_order_line.py:0
+#, python-format
+msgid "The maximum value of discounts not to be exceeded is "
+msgstr "La valeur maximale de remise à ne pas dépasser est : "
+
+#. module: ngtvexperience_managment
+#: model:ir.model.fields,help:ngtvexperience_managment.field_res_partner__has_administrative_validation
+#: model:ir.model.fields,help:ngtvexperience_managment.field_res_users__has_administrative_validation
+msgid ""
+"Used to show or hide element in form view if the current user has "
+"administrative validation."
+msgstr ""
+"Utilisé pour permettre l’accès à la modification du champ active sur la "
+"fiche client."
+
+#. module: ngtvexperience_managment
+#: model:ir.model.fields,help:ngtvexperience_managment.field_res_partner__current_user_is_active
+#: model:ir.model.fields,help:ngtvexperience_managment.field_res_users__current_user_is_active
+msgid ""
+"Used to show or hide element in form view if the current user is active."
+msgstr ""
+"Utilisé pour permettre l’accès à la modification du champ validation "
+"administrative sur la fiche client."
